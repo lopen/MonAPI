@@ -25,7 +25,7 @@ public class Parser {
                 // This solution needs to be fixed
                 // maybe fix this later on when the application is more complete *shrug*
                 String workingDir = System.getProperty("user.dir");
-                try (FileReader reader = new FileReader(workingDir + "\\src\\main\\java\\com\\trygveulsnes\\MonAPI\\pokemon.json\\pokedex.json")) {
+                try (FileReader reader = new FileReader(workingDir + "/src/main/java/com/trygveulsnes/MonAPI/pokemon.json/pokedex.json")) {
                         // Read file
                         Object obj = jsonParser.parse(reader);
 
