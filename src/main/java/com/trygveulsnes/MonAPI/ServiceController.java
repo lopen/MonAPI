@@ -13,8 +13,15 @@ public class ServiceController {
     private final AtomicLong counter = new AtomicLong();
 
     @GetMapping("/response")
-    public ServiceResponse response(@RequestParam(value = "name", defaultValue = "World") String name) {
-        return new ServiceResponse(counter.incrementAndGet(), String.format(template, name));
+    public ServiceResponse response(@RequestParam(value = "id", defaultValue = "Nothing found!") String id) {
+
+        Parser parser = new Parser();
+
+        Pokemon pokemon = parser.getAllPokemon().get(id);
+
+
+
+        return new ServiceResponse(counter.incrementAndGet(), String.format(template, pokemon.getName()));
     }
 }
  

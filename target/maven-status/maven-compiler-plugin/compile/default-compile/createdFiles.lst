@@ -1,3 +1,5 @@
 com/trygveulsnes/MonAPI/ServiceController.class
+com/trygveulsnes/MonAPI/Pokemon.class
+com/trygveulsnes/MonAPI/Parser.class
 com/trygveulsnes/MonAPI/MonApiApplication.class
 com/trygveulsnes/MonAPI/ServiceResponse.class
